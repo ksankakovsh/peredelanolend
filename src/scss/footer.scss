@@ -1,0 +1,74 @@
+.footer {
+    padding: 120px 0 50px;
+    background-color: $Black;
+    color: white;
+}
+.footer__content {
+    max-width: 665px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.footer__title {
+text-transform: uppercase;
+font-family: Manrope;
+font-size: 40px;
+font-weight: 600;
+line-height: 55px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 40px;
+}
+.footer__title_blue {
+    color: $Blue;
+}
+.footer__content-text {
+max-width: 400px;
+width: 100%;
+font-family: Manrope;
+font-size: 20px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 35px;
+}
+.footer__content-text_pink {
+    color: $Pink;
+}
+.footer__interactive {
+    position: relative;
+    max-width: 998px;
+    width: 100%;
+    height: 282px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    background-image: url(../img/peredelano_conffooter.png);
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    margin-bottom: 40px;
+}
+.social {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.social__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $LightPink;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+.cw {
+font-family: MartianMono;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.4px;
+text-transform: uppercase;
+}

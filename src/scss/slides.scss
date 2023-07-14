@@ -1,0 +1,45 @@
+.slides {
+    padding: 60px 0 30px;
+    background-color: $Black;
+    color: white;
+}
+.slides__title {
+font-family: Manrope;
+font-size: 40px;
+font-weight: 600;
+line-height: 55px;
+letter-spacing: 0em;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+.slides__title_pink {
+    color: $Pink;
+}
+.slides__text {
+max-width: 400px;
+width: 100%;
+font-family: Manrope;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 30px;
+}
+@media screen and (max-width: 500px) {
+    .slides__title {
+        font-size: 30px;
+    line-height: 39px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .slides__title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .slides__text {
+        font-size: 14px;
+    line-height: 20px;
+    }
+}
