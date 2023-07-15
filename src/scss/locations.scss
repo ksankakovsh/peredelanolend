@@ -1,0 +1,44 @@
+.locations {
+    background: #E9E9E9;
+    padding: 120px 0;
+}
+.locations__title {
+    color: $Black;
+text-align: center;
+font-family: Manrope;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+margin-bottom: 40px;
+}
+.locations__title_blue {
+    color: $DarkBlue;
+}
+.locations__text {
+    max-width: 400px;
+    width: 100%;
+    color: $Black;
+font-family: Manrope;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 30px */
+}
+.locations__text_pink {
+    color: $Pink;
+}
+@media screen and (max-width: 520px) {
+ .locations__title {
+font-size: 24px;
+line-height: normal;
+ }
+ .locations__text {
+font-family: Manrope;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ }
+}

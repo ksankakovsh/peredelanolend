@@ -1,14 +1,35 @@
 /*reset*/
 *{padding:0;margin:0;border:none;font-family: Lato;}*,::after,::before{box-sizing:border-box}a,a:hover,a:link,a:visited{text-decoration:none}aside,footer,header,legend,main,nav,section{display:block}h1,h2,h3,h4,h5,h6,p{font-size:inherit;font-weight:inherit}ul,ul li{list-style:none}img{vertical-align:top}img,svg{max-width:100%;height:auto}address{font-style:normal}button,input,select,textarea{font-family:inherit;font-size:inherit;color:inherit;background-color:transparent}input::-ms-clear{display:none}button,input[type=submit]{display:inline-block;box-shadow:none;background:0 0;cursor:pointer}button:active,button:focus,input:active,input:focus{outline:0}button::-moz-focus-inner{padding:0;border:0}label{cursor:pointer}
 /*main*/
-.wrap {max-width: 1240px; width: 100%; margin: 0 auto; padding: 0 15px;}
-.row {display: flex; justify-content: space-between; flex-wrap: wrap}
-
 @import "./libs/variables.scss";
 @import "./libs/mixins.scss";
+.wrap {max-width: 1240px; width: 100%; margin: 0 auto; padding: 0 15px;}
+.row {display: flex; justify-content: space-between; flex-wrap: wrap}
+.button {
+    display: block;
+    max-width: 490px;
+    width: 100%;
+font-family: MartianMono;
+font-size: 22px;
+font-weight: 400;
+line-height: 60px;
+letter-spacing: 0em;
+text-align: center;
+border: 2px solid $Black;
+background: $Blue;
+-webkit-box-shadow: 10px 10px 0 -1px #4178e5, 10px 10px 0 1px #303030;
+-moz-box-shadow: 10px 10px 0 -1px #4178e5, 10px 10px 0 1px #303030;
+box-shadow: 10px 10px 0 -1px #4178e5, 10px 10px 0 1px #303030;
+    &:hover {
+        @include hoverBtn;
+    }
+}
+
 @import "./fonts.scss";
 @import "./header.scss";
 @import "./first.scss";
 @import "./slides.scss";
-
+@import "./locations.scss";
+@import "./tabs.scss";
+@import "./card.scss";
 @import "./footer.scss";

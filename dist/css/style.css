@@ -100,6 +100,21 @@ label {
 
 /*main*/
 
+a {
+  text-decoration: none;
+  color: #303030;
+}
+
+body {
+  margin: 0;
+}
+
+picture > .img-fluid {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto !important;
+}
+
 .wrap {
   max-width: 1240px;
   width: 100%;
@@ -113,18 +128,24 @@ label {
   flex-wrap: wrap;
 }
 
-a {
-  text-decoration: none;
-}
-
-body {
-  margin: 0;
-}
-
-picture > .img-fluid {
+.button {
   display: block;
-  max-width: 100%;
-  margin: 0 auto !important;
+  max-width: 490px;
+  width: 100%;
+  font-family: MartianMono;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: 2px solid #303030;
+  background: #8BD2FF;
+  box-shadow: 10px 10px 0 -1px #4178e5, 10px 10px 0 1px #303030;
+}
+
+.button:hover {
+  background: #E7B9E2;
+  box-shadow: 10px 10px 0 -1px #C35EB9, 10px 10px 0 1px #303030;
 }
 
 @font-face {
@@ -234,21 +255,6 @@ picture > .img-fluid {
   color: #C35EB9;
 }
 
-.button {
-  display: block;
-  max-width: 490px;
-  width: 100%;
-  font-family: MartianMono;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 60px;
-  letter-spacing: 0em;
-  text-align: center;
-  border: 2px solid #303030;
-  background: #8BD2FF;
-  box-shadow: 10px 10px 0 -1px #4178e5, 10px 10px 0 1px #303030;
-}
-
 .first__button-mobile {
   display: none;
 }
@@ -315,6 +321,159 @@ picture > .img-fluid {
   letter-spacing: 0em;
   text-align: left;
   margin-bottom: 30px;
+}
+
+.locations {
+  background: #E9E9E9;
+  padding: 120px 0;
+}
+
+.locations__title {
+  color: #303030;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.locations__title_blue {
+  color: #4178E5;
+}
+
+.locations__text {
+  max-width: 400px;
+  width: 100%;
+  color: #303030;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  /* 30px */
+}
+
+.locations__text_pink {
+  color: #C35EB9;
+}
+
+.tabs {
+  margin: 60px auto 0;
+}
+
+.tabs__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0 auto 60px;
+  max-width: 605px;
+  width: 100%;
+  gap: 20px;
+}
+
+.tabs__btn {
+  padding: 15px 0;
+  text-decoration: none;
+  color: #303030;
+  font-family: MartianMono;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  border-radius: 12px;
+  border: 2px solid #303030;
+  background: #C35EB9;
+  cursor: pointer;
+}
+
+.tabs__btn_active {
+  background: #E7B9E2;
+  cursor: default;
+}
+
+.tabs__btn:not(.tabs__btn_active):hover,
+.tabs__btn:not(.tabs__btn_active):focus {
+  background-color: #E7B9E2;
+}
+
+.tabs__content {
+  padding: 1rem;
+  max-width: 1240px;
+  width: 100%;
+}
+
+.tabs__pane {
+  display: none;
+}
+
+.tabs__pane_show {
+  display: block;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px 20px;
+}
+
+.card {
+  border: 2px solid #303030;
+  max-width: 378px;
+  width: 100%;
+  height: 560px;
+  color: #303030;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 20px;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: #FFEEFD;
+}
+
+.card:hover .mark_bg {
+  fill: #C35EB9;
+}
+
+.card:hover .button {
+  background: #E7B9E2;
+  box-shadow: 10px 10px 0 -1px #C35EB9, 10px 10px 0 1px #303030;
+}
+
+.card__title {
+  font-family: MartianMono;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.mark {
+  position: absolute;
+  top: -2%;
+  right: 1%;
+}
+
+.mark_bg {
+  fill: #E7B9E2;
 }
 
 .footer {
@@ -458,6 +617,21 @@ picture > .img-fluid {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .locations__title {
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .locations__text {
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
 @media screen and (max-width: 510px) {
   .icon {
     width: 26px;
@@ -523,6 +697,12 @@ picture > .img-fluid {
   .header__logo {
     max-width: 65px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .card .button {
+    font-size: 20px;
   }
 }
 
