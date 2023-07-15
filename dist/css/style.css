@@ -391,6 +391,16 @@ picture > .img-fluid {
   width: 85px;
   height: 85px;
   border-radius: 50%;
+  transition: 0.5s;
+}
+
+.social__icon:hover {
+  background-color: #C35EB9;
+}
+
+.icon {
+  width: 50px;
+  height: 51px;
 }
 
 .cw {
@@ -435,9 +445,32 @@ picture > .img-fluid {
   }
 }
 
+@media screen and (max-width: 960px) {
+  .footer__content-text,
+  .footer__img {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 660px) {
   .header__nav {
     display: none;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .social__icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .footer__interactive {
+    height: 210px;
   }
 }
 
@@ -452,6 +485,13 @@ picture > .img-fluid {
   .header__logo {
     max-width: 120px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .footer__title {
+    font-size: 24px;
+    line-height: normal;
   }
 }
 
