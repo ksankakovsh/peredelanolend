@@ -1,32 +1,22 @@
 <div class="tabs">
-    <div class="tabs__nav">
+    <div class="tabs__nav" id="choose">
       <button class="tabs__btn tabs__btn_active">Европа</button>
       <button class="tabs__btn">Азия</button>
       <button class="tabs__btn">Америка</button>
+      <button class="tabs__btn">Африка</button>
     </div>
     <div class="tabs__content">
       <div class="tabs__pane tabs__pane_show">
-        @@include('card.html', {})
-        @@include('card.html', {})
-        @@include('card.html', {})
-        @@include('card.html', {})
-        @@include('card.html', {})
-        @@include('card.html', {})
-        @@include('card.html', {})
-        @@include('card.html', {})
-        @@include('card.html', {})
+          @@loop('card.html', 'data/asia.json')
       </div>
       <div class="tabs__pane">
-        @@include('card.html', {})
-        @@include('card.html', {})
-        @@include('card.html', {})
-        @@include('card.html', {})
-        @@include('card.html', {})
+          @@loop('card.html', 'data/europe.json')
       </div>
-      <div class="tabs__pane" id="content-3">
-        @@include('card.html', {})
-        @@include('card.html', {})
-        @@include('card.html', {})
+      <div class="tabs__pane">
+          @@loop('card.html', 'data/america.json'),
+      </div>
+      <div class="tabs__pane">
+          @@loop('card.html', 'data/afrika.json')
       </div>
     </div>
-  </div>
+</div>
